@@ -31,7 +31,7 @@ function SingleNotes() {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        "https://leander-notes.herokuapp.com/api/note/deletenote/" + NoteId,
+        "https://noted-website.herokuapp.com/api/note/deletenote/" + NoteId,
         config
       );
       setNotes(notes.filter((n) => n._id !== NoteId));

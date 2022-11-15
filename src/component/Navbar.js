@@ -74,6 +74,16 @@ function Navbar() {
     },
     {
       id: 4,
+      to: "/write",
+      name: "Write",
+      child: (
+        <>
+          <i className="fa-solid mr-2  fa-plus"></i>
+        </>
+      ),
+    },
+    {
+      id: 5,
       to: "/setting",
       name: "Setting",
       child: (

@@ -1,16 +1,11 @@
 import React, { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Context } from "../../Context/ContextProvider";
 import Navbar from "../Navbar";
 import NoPreview from "../NoPreview";
 
 function Notes() {
-  const navigate = useNavigate();
   const { user, notes } = useContext(Context);
-  const click = (e) => {
-    e.preventDefault();
-    navigate("/write");
-  };
 
   return (
     <div className="flex w-screen flex-col md:flex-row h-screen bg-gray-300">
@@ -85,14 +80,6 @@ function Notes() {
           ) : (
             <NoPreview />
           )}
-        </div>
-
-        <div
-          className="hidden hover:scale-125 duration-300 rounded-2xl cursor-pointer bg-blue-600 absolute p-2 h-12 items-center bottom-20 right-10 md:flex  text-white "
-          onClick={click}
-        >
-          <i className="fa-solid fa-2xl fa-plus"></i>
-          <h1 className="ml-2">New</h1>
         </div>
       </div>
     </div>

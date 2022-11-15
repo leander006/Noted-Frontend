@@ -16,15 +16,15 @@ const Home = () => {
     <div className="fw-screen flex-col md:flex-row h-screen justify-center items-center flex">
       <Navbar />
       <div className="w-screen h-screen">
-        <h1 className="absolute text-xl sm:text-4xl md:text-5xl left-[25vw] md:left-[38vw] lg:left-[45vw] text-blue-500 top-[37vh]">
+        <h1 className="absolute text-2xl md:text-5xl left-[20%] md:left-[38vw] lg:left-[45vw] text-blue-500 top-[37vh]">
           Make your notes
         </h1>
-        <h1 className="absolute text-xl sm:text-4xl md:text-5xl left-[25%] md:left-[38vw] lg:left-[45vw] text-blue-500 top-[43vh] ">
+        <h1 className="absolute text-2xl sm:text-4xl md:text-5xl left-[20%] md:left-[38vw] lg:left-[45vw] text-blue-500 top-[43vh] ">
           explore your emotions
         </h1>
 
         <img
-          className="h-full w-full object-left "
+          className="h-full w-full object-right "
           src="./home2.jpg"
           alt="home"
         />
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
         ) : (
           <div
-            className="absolute p-2 top-[50vh] text-white left-[45vw] md:left-[60vw] lg:left-[63vw] xl:left-[54vw] bg-blue-500 rounded-md cursor-pointer  hover:bg-blue-400"
+            className="absolute p-2 top-[54vh] text-white left-[38vw] md:left-[60vw] lg:left-[63vw] xl:left-[54vw] bg-blue-500 rounded-md cursor-pointer  hover:bg-blue-400"
             onClick={handleLogout}
           >
             Logout
